@@ -1,0 +1,36 @@
+DEPLOY REACT APLICATION USING AWS AMPLIFY
+
+CREATE A REACT APPLICATION
+To create react application we need to have node.js and npm(node package manager) installed on our system
+ 
+•	INSTALL  NODE.JS AND NPM ON LINUX
+1.Open your terminal
+2. Install node.js using the following command- sudo apt install node.js
+3.check the node version-     node -v
+4. Install the npm using the following command- sudo apt install npm
+5.Check the npm version-   npm -v
+ 
+ 
+•	CREATE REACT APP
+Enter the following command in your terminal to create react app
+npx create-react-app  amplifyapp 
+cd amplifyapp 
+npm start
+ 
+ 
+•	INITIALIZE GIT REPOSITORY
+1.Create new git repository for the app and change the branch name to master
+2.Initialize and push the application to new repository by executing following command in the terminal
+git init
+git remote add origin git@github.com:username/reponame.git
+git add .
+git commit -m "initil commit" 
+git push origin master
+ 
+ 
+•	DEPLOY REACT APPLICATION WITH AWS AMPLIFY
+1.Log into the aws mangement console and search for aws amplify
+2.aws amplify->host your web app->select github->continue->authenticate github neter the reponame and branch name-> next->accept the default build settings->next->save and deploy
+3.aws amplify will build your source code and deploy the application at https://amplifyapp.com
+4.Once complted select the thumbnail to see the react application running
+
